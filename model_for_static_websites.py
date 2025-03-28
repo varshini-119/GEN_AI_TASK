@@ -15,9 +15,7 @@ websites = [
     "https://www.lvmh.com",
     "https://www.chanel.com",
     "https://www.hermes.com",
-    "https://www.gucci.com",
     "https://www.pradagroup.com",
-    "https://www.burberry.com",
     "https://www.rolex.com",
     "https://www.patek.com",
     "https://www.omega.com"
@@ -144,9 +142,9 @@ def main():
 
     # Save results to CSV
     df = pd.DataFrame(all_data)
-    df.to_csv("companydata.csv", index=False, encoding="utf-8")
+    df.to_csv("static_websites_data.csv", index=False, encoding="utf-8")
 
-    print("✅ Extraction complete. Data saved in 'companydata.csv'.")
+    print("✅ Extraction complete. Data saved in 'static_websites_data.csv'.")
 
 if __name__ == "__main__":
     main()
